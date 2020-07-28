@@ -35,6 +35,12 @@
 	  </script>
 	  
 	<script type="text/javascript">
+        $.validator.setdefaults(
+            {
+                submitHandler: function(){
+                alert("Tudo numa boa!");     
+            }
+        });
 			//valida campos form
 			$(document).ready(function(){
                 $("#cep").mask('00000-000');
